@@ -1,10 +1,11 @@
 javascript: (function () {
     const searchFieldContainer = document.createElement("DIV");
     Object.assign(searchFieldContainer.style, {
+        display: "flex",
         position: "absolute",
         top: "50px",
         right: "25px",
-        width: "100px",
+        width: "200px",
         height: "25px",
     });
 
@@ -19,13 +20,16 @@ javascript: (function () {
     });
 
     const searchButton = document.createElement("BUTTON");
+    searchButton.textContent = "Search";
     Object.assign(searchButton.style, {
         display: "inline-block",
         backgroundColor: "blue",
+        color: "white",
         boxSizing: "border-box",
         width: "25%",
         height: "100%",
         border: "1px solid darkblue",
+        cursor: "pointer",
     });
 
     searchFieldContainer.append(searchField, searchButton);
